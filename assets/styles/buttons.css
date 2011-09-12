@@ -1,1 +1,46 @@
-.button{}
+/******
+Buttons default to blue because they are most used.
+Yellow buttons use the class 'dominant'. We need a better term for that.
+******/
+.btn{
+	-webkit-appearance: none; /* remove iOS default button styles */
+	-webkit-background-clip: padding-box; /* prevent background from bleeding through border */
+	-moz-background-clip: padding-box;
+	-ms-background-clip: padding-box;
+	background-clip: padding-box;
+	background:#233d64; 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4f7fbc), color-stop(3%,#2c4f7f), color-stop(100%,#233d64)); 
+	background: -webkit-linear-gradient(top, #4f7fbc 3%,#2c4f7f 3%,#233d64 100%);
+	background:    -moz-linear-gradient(top, #4f7fbc 3%,#2c4f7f 3%,#233d64 100%);
+	background:     -ms-linear-gradient(top, #4f7fbc 3%,#2c4f7f 3%,#233d64 100%);
+	filter: 		progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4f7f', endColorstr='#233d64',GradientType=0 ); /* IE6-9 */
+	background:          linear-gradient(top, #4f7fbc 3%,#2c4f7f 3%,#233d64 100%);
+	border:2px solid #c3c4c4;
+	border-radius:6px;
+	color:#fff;
+	cursor:pointer;
+	display:inline-block;
+	font:bold 12px/1 "Trebuchet MS", sans-serif;
+	padding:8px;
+	position:relative;
+	text-decoration:none;
+	text-transform:uppercase;
+	vertical-align: baseline;
+}
+/* remove extra padding in firefox on input items */
+.btn::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+
+.btn.dominant{
+	background:#fbf241; 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#fefdd9), color-stop(3%,#fef9b1), color-stop(100%,#fbf241)); 
+	background: -webkit-linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
+	background:    -moz-linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
+	background:     -ms-linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
+	filter: 		progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9b1', endColorstr='#fbf241',GradientType=0 ); /* IE6-9 */
+	background:         linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
+	color:#737474;
+}

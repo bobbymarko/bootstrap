@@ -1,4 +1,5 @@
 /*
 global.css - imports componentized css files in dev. This would all be pre-compiled and minified for production.
 */
-@import url(buttons.css);
+@import url('typography.css');
+@import url('buttons.css');
