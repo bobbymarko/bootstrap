@@ -19,13 +19,14 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
 	border-radius:6px;
 	color:#fff;
 	cursor:pointer;
-	display:inline-block;
-	font:bold 12px/1 "Trebuchet MS", sans-serif;
-	padding:8px;
+	display:inline-block; /* we need display:inline; and zoom:1; for IE7. Also be mindful of white space in markup for inline-block */
+	font:bold 12px/1.2 "Trebuchet MS", sans-serif; /* line-height set to 1.2 makes inputs and links align in height cross-browser */
+	margin:0;
+	padding:6px 8px;
 	position:relative;
 	text-decoration:none;
 	text-transform:uppercase;
-	vertical-align: baseline;
+	vertical-align: top;
 }
 /* remove extra padding in firefox on input items */
 .btn::-moz-focus-inner {
@@ -33,6 +34,9 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
     border: 0
 }
 
+.btn:hover{}
+
+.btn:active{}
 
 .btn.dominant{
 	background:#fbf241; 
@@ -43,4 +47,9 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
 	filter: 		progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9b1', endColorstr='#fbf241',GradientType=0 ); /* IE6-9 */
 	background:         linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
 	color:#737474;
+}
+
+.btn.small{
+	font-size:10px;
+	padding:4px 6px;
 }
