@@ -45,17 +45,25 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
 	background-color:#011e33;
 }
 
-.btn.dominant{
-	background:#fbf241; 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#fefdd9), color-stop(3%,#fef9b1), color-stop(100%,#fbf241)); 
-	background: -webkit-linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
-	background:    -moz-linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
-	background:     -ms-linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
-	background:         linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
-	color:#737474;
-}
-
 .btn.small{
 	font-size:10px;
 	padding:4px 6px;
+}
+
+.btn.dominant{
+	background-color:#fff200; 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%,rgb(254,253,217)), color-stop(3%,rgba(255,253,213,.8)), color-stop(100%,rgba(251,242,65,.5))); 
+	background-image: -webkit-linear-gradient(top, rgb(254,253,217) 3%,rgba(255,253,213,.8) 3%,rgba(251,242,65,.5) 100%);
+	background-image:    -moz-linear-gradient(top, rgb(254,253,217) 3%,rgba(255,253,213,.8) 3%,rgba(251,242,65,.5) 100%);
+	background-image:     -ms-linear-gradient(top, rgb(254,253,217) 3%,rgba(255,253,213,.8) 3%,rgba(251,242,65,.5) 100%);
+	background-image:         linear-gradient(top, rgb(254,253,217) 3%,rgba(255,253,213,.8) 3%,rgba(251,242,65,.5) 100%);
+	color:#737474;
+}
+
+.btn.dominant:hover{
+	background-color:#fff;
+}
+
+.btn.dominant:active{
+	background-color:#e3c603;
 }
