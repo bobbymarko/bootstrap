@@ -8,24 +8,27 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
 	-moz-background-clip: padding-box;
 	-ms-background-clip: padding-box;
 	background-clip: padding-box;
-	background:#233d64; 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4f7fbc), color-stop(3%,#2c4f7f), color-stop(100%,#233d64)); 
-	background: -webkit-linear-gradient(top, #4f7fbc 3%,#2c4f7f 3%,#233d64 100%);
-	background:    -moz-linear-gradient(top, #4f7fbc 3%,#2c4f7f 3%,#233d64 100%);
-	background:     -ms-linear-gradient(top, #4f7fbc 3%,#2c4f7f 3%,#233d64 100%);
-	filter: 		progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4f7f', endColorstr='#233d64',GradientType=0 ); /* IE6-9 */
-	background:          linear-gradient(top, #4f7fbc 3%,#2c4f7f 3%,#233d64 100%);
+	background-color:#003b64; 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%,rgba(133,185,250,.5)), color-stop(3%,rgba(51,94,153,.5)), color-stop(100%,rgba(35,61,100,.5))); 
+	background-image: -webkit-linear-gradient(top, rgba(133,185,250,.5) 3%,rgba(51,94,153,.5) 3%,rgba(35,61,100,.5) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(133,185,250,.5) 3%,rgba(51,94,153,.5) 3%,rgba(35,61,100,.5) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(133,185,250,.5) 3%,rgba(51,94,153,.5) 3%,rgba(35,61,100,.5) 100%) 100%);
+	background:          linear-gradient(top, rgba(133,185,250,.5) 3%,rgba(51,94,153,.5) 3%,rgba(35,61,100,.5) 100%);
 	border:2px solid #c3c4c4;
 	border-radius:6px;
 	color:#fff;
 	cursor:pointer;
-	display:inline-block; /* we need display:inline; and zoom:1; for IE7. Also be mindful of white space in markup for inline-block */
+	display:inline-block; /* Be mindful of white space in markup for inline-block  */
 	font:bold 12px/1.2 "Trebuchet MS", sans-serif; /* line-height set to 1.2 makes inputs and links align in height cross-browser */
 	margin:0;
 	padding:6px 8px;
 	position:relative;
 	text-decoration:none;
 	text-transform:uppercase;
+	-webkit-transition:background-color 150ms ease-in;
+	-moz-transition:background-color 150ms ease-in;
+	-ms-transition:background-color 150ms ease-in;
+	transition:background-color 150ms ease-in;
 	vertical-align: top;
 }
 /* remove extra padding in firefox on input items */
@@ -34,9 +37,13 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
     border: 0
 }
 
-.btn:hover{}
+.btn:hover{
+	background-color:#1a63a6;
+}
 
-.btn:active{}
+.btn:active{
+	background-color:#011e33;
+}
 
 .btn.dominant{
 	background:#fbf241; 
@@ -44,7 +51,6 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
 	background: -webkit-linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
 	background:    -moz-linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
 	background:     -ms-linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
-	filter: 		progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9b1', endColorstr='#fbf241',GradientType=0 ); /* IE6-9 */
 	background:         linear-gradient(top, #fefdd9 3%,#fef9b1 3%,#fbf241 100%);
 	color:#737474;
 }

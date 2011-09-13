@@ -1,0 +1,8 @@
+/* styles for IE9 and below */
+.btn{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4f7f', endColorstr='#233d64',GradientType=0 );
+}
+
+.btn.dominant{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9b1', endColorstr='#fbf241',GradientType=0 );
+}
