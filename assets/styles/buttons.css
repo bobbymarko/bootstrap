@@ -47,9 +47,14 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
 }
 
 /* styles for IE8 and below */
-.ie7 .btn, .ie8 .btn, .ie9 .btn{
+.ie7 .btn, .ie8 .btn{
     display:inline;
     zoom:1;
+}
+
+/* styles for IE7 */
+.ie7 .btn{
+	 overflow:visible; /* Corrects inner spacing displayed oddly in IE7 via https://github.com/necolas/normalize.css/blob/master/normalize.css */
 }
 /* end IE styles */
 
