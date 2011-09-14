@@ -37,6 +37,22 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
     border: 0
 }
 
+/* styles for IE9 and below */
+.ie7 .btn, .ie8 .btn, .ie9 .btn{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4f7f', endColorstr='#233d64',GradientType=0 );
+}
+
+.ie7 .btn.dominant, .ie8 .btn.dominant, .ie9 .btn.dominant{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9b1', endColorstr='#fbf241',GradientType=0 );
+}
+
+/* styles for IE8 and below */
+.ie7 .btn, .ie8 .btn, .ie9 .btn{
+    display:inline;
+    zoom:1;
+}
+/* end IE styles */
+
 .btn:hover{
 	background-color:#1a63a6;
 }
