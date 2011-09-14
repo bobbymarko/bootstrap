@@ -3,3 +3,8 @@ global.css - imports componentized css files in dev. This would all be pre-compi
 */
 @import url('typography.css');
 @import url('buttons.css');
+
+.row{
+    margin:20px;
+    position:relative;
+}

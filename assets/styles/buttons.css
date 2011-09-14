@@ -1,6 +1,6 @@
 /******
 Buttons default to blue because they are most used.
-Yellow buttons use the class 'dominant'. We need a better term for that.
+Yellow buttons use the class 'btn-commit'. We need a better term for that.
 ******/
 .btn{
 	-webkit-appearance: none; /* remove iOS default button styles */
@@ -31,6 +31,7 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
 	transition:background-color 150ms ease-in;
 	vertical-align: top;
 }
+
 /* remove extra padding in firefox on input items */
 .btn::-moz-focus-inner {
     padding: 0;
@@ -42,18 +43,19 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4f7f', endColorstr='#233d64',GradientType=0 );
 }
 
-.ie7 .btn.dominant, .ie8 .btn.dominant, .ie9 .btn.dominant{
+.ie7 .btn.btn-commit, .ie8 .btn.btn-commit, .ie9 .btn.btn-commit{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9b1', endColorstr='#fbf241',GradientType=0 );
 }
 
 /* styles for IE8 and below */
 .ie7 .btn, .ie8 .btn{
-    display:inline;
-    zoom:1;
+
 }
 
 /* styles for IE7 */
 .ie7 .btn{
+    display:inline;
+    zoom:1;
 	 overflow:visible; /* Corrects inner spacing displayed oddly in IE7 via https://github.com/necolas/normalize.css/blob/master/normalize.css */
 }
 /* end IE styles */
@@ -66,12 +68,16 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
 	background-color:#011e33;
 }
 
-.btn.small{
+/* button sizes */
+
+.btn.btn-small{
 	font-size:10px;
 	padding:4px 6px;
 }
 
-.btn.dominant{
+/* commit action buttons (yellow) */
+
+.btn.btn-commit{
 	background-color:#fff200; 
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%,rgb(254,253,217)), color-stop(3%,rgba(255,253,213,.8)), color-stop(100%,rgba(251,242,65,.5))); 
 	background-image: -webkit-linear-gradient(top, rgb(254,253,217) 3%,rgba(255,253,213,.8) 3%,rgba(251,242,65,.5) 100%);
@@ -81,10 +87,43 @@ Yellow buttons use the class 'dominant'. We need a better term for that.
 	color:#737474;
 }
 
-.btn.dominant:hover{
+.btn.btn-commit:hover{
 	background-color:#fff;
 }
 
-.btn.dominant:active{
+.btn.btn-commit:active{
 	background-color:#e3c603;
+}
+
+/* secondary (gray) buttons */
+
+.btn.btn-secondary{
+	background-color:#c3c4c4; 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%,rgba(135,135,135,.5)), color-stop(3%,rgba(158,158,158,.5)), color-stop(100%,rgba(110,110,110,.5))); 
+	background-image: -webkit-linear-gradient(top, rgba(135,135,135,.5) 3%,rgba(158,158,158,.5) 3%,rgba(110,110,110,.5) 100%);
+	background-image:    -moz-linear-gradient(top, rgba(135,135,135,.5) 3%,rgba(158,158,158,.5) 3%,rgba(110,110,110,.5) 100%);
+	background-image:     -ms-linear-gradient(top, rgba(135,135,135,.5) 3%,rgba(158,158,158,.5) 3%,rgba(110,110,110,.5) 100%);
+	background-image:         linear-gradient(top, rgba(135,135,135,.5) 3%,rgba(158,158,158,.5) 3%,rgba(110,110,110,.5) 100%);
+	color:#fff;
+}
+
+.btn.btn-secondary:hover{
+	background-color:#fff;
+}
+
+.btn.btn-secondary:active{
+	background-color:#9a9b9b;
+}
+
+/* button icons */
+
+.btn .btn-after{
+	font:normal 24px/0 arial,sans-serif;
+	position:relative;
+	top:2px;
+}
+
+.btn.btn-small .btn-after{
+	font-size:18px;
+	top:1px;
 }
