@@ -56,7 +56,7 @@ Yellow buttons use the class 'btn-commit'. We need a better term for that.
 .ie7 .btn{
     display:inline;
     zoom:1;
-	 overflow:visible; /* Corrects inner spacing displayed oddly in IE7 via https://github.com/necolas/normalize.css/blob/master/normalize.css */
+    overflow:visible; /* Corrects inner spacing displayed oddly in IE7 via https://github.com/necolas/normalize.css/blob/master/normalize.css */
 }
 /* end IE styles */
 
