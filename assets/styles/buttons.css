@@ -34,17 +34,17 @@ Yellow buttons use the class 'btn-commit'. We need a better term for that.
 
 /* remove extra padding in firefox on input items */
 .btn::-moz-focus-inner {
-    padding: 0;
-    border: 0
+	padding: 0;
+	border: 0
 }
 
 /* styles for IE9 and below */
 .ie7 .btn, .ie8 .btn, .ie9 .btn{
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4f7f', endColorstr='#233d64',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c4f7f', endColorstr='#233d64',GradientType=0 );
 }
 
 .ie7 .btn.btn-commit, .ie8 .btn.btn-commit, .ie9 .btn.btn-commit{
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9b1', endColorstr='#fbf241',GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef9b1', endColorstr='#fbf241',GradientType=0 );
 }
 
 /* styles for IE8 and below */
@@ -54,9 +54,9 @@ Yellow buttons use the class 'btn-commit'. We need a better term for that.
 
 /* styles for IE7 */
 .ie7 .btn{
-    display:inline;
-    zoom:1;
-    overflow:visible; /* Corrects inner spacing displayed oddly in IE7 via https://github.com/necolas/normalize.css/blob/master/normalize.css */
+	display:inline;
+	zoom:1;
+	overflow:visible; /* Corrects inner spacing displayed oddly in IE7 via https://github.com/necolas/normalize.css/blob/master/normalize.css */
 }
 /* end IE styles */
 
